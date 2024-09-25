@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Serviços MAB</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <a href="index.html">
+                        <img src="img/logo.png" id="logo" alt="Serviços MAB">
+                    </a>
+                    <i class="fas fa-bars btn-menumobile"></i>
+                    <ul>
+                        <li><a href="ev.html">Encontrar vagas</a></li>
+                        <li><a href="sendjobs.html">Enviar vagas</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="main-banner">
+                <div id="search-form">
+                    <h1>A maneira mais fácil de encontrar o seu emprego</h1>
+                    <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus sonhos.</p>
+                    <form id="formProcIn">
+                        <input type="text" name="serviço" id="job" placeholder="Digite o cargo">
+                        <input type="text" name="company" id="company" placeholder="Digite a Empresa">
+                        <select name="categorias" id="category">
+                            <option value="">Categoria</option>
+                            <option value="pj">PJ</option>
+                            <option value="clt">CLT</option>
+                            <option value="homeoffice">Home Office</option>
+                            <option value="estagio">Estágio</option>
+                        </select>
+                        <input type="submit" value="Pesquisar">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main id="lastjobs-container" class="wrapper">
+            <h1>Ultimas vagas enviadas</h1>
+            <ul id="jobList">
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/intelbraslogo.png" alt="logo google">
+                            <div class="company-info">
+                                <h3>Desenvolvedor web</h3>
+                                <p>Intelbras</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-maker-alt"></i>
+                            <p>Canaã dos Carajás</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="clt">CLT</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/bblogo.png" alt="logo IBM">
+                            <div class="company-info">
+                                <h3>Analista de sistemas</h3>
+                                <p>Banco Do Brasil</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-maker-alt"></i>
+                            <p>Parauapebas</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="pj">PJ</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/linkedinlogo.png" alt="logo linkedin">
+                            <div class="company-info">
+                                <h3>Desenvolvedor Fornt End</h3>
+                                <p>Linkedin</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-maker-alt"></i>
+                            <p>Marabá</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="homeoffice">Home Office</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="job.html" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/facebooklogo.png" alt="logo facebook">
+                            <div class="company-info">
+                                <h3>Desenvolvedor Full Stack</h3>
+                                <p>Facebook</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-maker-alt"></i>
+                            <p>Marabá</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="homeoffice">Home office</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="btnjobs-container">
+                <a href="#" class="btn-jobs">Ver mais vagas</a>
+            </div>
+        </main>
+        <section id="sendjobs-container">
+            <div id="sendjobs-inner" class="wrapper">
+                <h2>Envie uma vaga que será vista por milhares de candidatos.</h2>
+                <p>Conecte-se com os talentos certos para sua empresa de forma rápida e eficiente. Publicar uma vaga é fácil, e sua oportunidade terá alcance em todo o Pará. Encontre os melhores profissionais para impulsionar seu negócio!</p>
+                <a href="sendjobs.html" class="light-btn">Enviar vaga</a>
+
+            </div>
+        </section>
+        <section id="status-container" class="wrapper">
+            <h2 class="title-center">Estatísticas do Serviços MAB</h2>
+            <p class="p-center">A cada dia, conectamos empresas e profissionais em busca das melhores oportunidades. Confira os números que destacam nosso impacto no mercado de trabalho:</p>
+            <div>
+                <div class="status-box">
+                    <span class="status-qtd">150</span>
+                    <p class="status-text">Vagas abertas</p>
+                </div>
+                <div class="status-box">
+                    <span class="status-qtd">250</span>
+                    <p class="status-text">Candidatos contratados</p>
+                </div>
+                <div class="status-box">
+                    <span class="status-qtd">50</span>
+                    <p class="status-text">Empresas participantes</p>
+                </div>
+                <div class="status-box">
+                    <span class="status-qtd">550</span>
+                    <p class="status-text">Candidatos</p>
+                </div>
+            </div>
+        </section>
+        <section id="testmony-container">
+            <div class="wrapper">
+                <h2>Veja o que os candidatos dizem</h2>
+                <p class="p-center">Nesta seção, apresentamos os depoimentos de alguns dos nossos usuários que encontraram oportunidades de emprego por meio do nosso site. Confira o que eles têm a dizer:</p>
+                <div class="testmony-box">
+                    <p class="testmony-msg">Encontrei meu emprego atual em menos de uma semana usando o site. A plataforma é fácil de navegar e me conectou diretamente com empresas que estavam procurando meu perfil!</p>
+                    <img src="img/avatar1.png" alt="pfp">
+                    <p class="testmony-name">Jonas</p>
+                </div>
+                <div class="testmony-box">
+                    <p class="testmony-msg">O site foi uma ótima ferramenta para divulgar meus serviços. Desde que comecei a anunciar aqui, meu fluxo de clientes aumentou significativamente!</p>
+                    <img src="img/avatar2.png" alt="pfp">
+                    <p class="testmony-name">Sabrina</p>
+                </div>
+                <div class="testmony-box">
+                    <p class="testmony-msg">Através do site, consegui uma vaga exatamente na minha área de atuação. A rapidez e simplicidade do processo foram surpreendentes.</p>
+                    <img src="img/avatar3.png" alt="pfp">
+                    <p class="testmony-name">Italo</p>
+                </div>
+                <div class="testmony-box">
+                    <p class="testmony-msg">Como empreendedora, utilizar o portal para divulgar minhas vagas foi um divisor de águas. Encontrei profissionais qualificados e agilizei meu processo de contratação!</p>
+                    <img src="img/avatar4.png" alt="pfp">
+                    <p class="testmony-name">Sara</p>
+                </div>
+            </div>
+        </section>
+        <section id="blog-container" class="wrapper">
+            <h2 class="title-center">Últimos artigos do nosso blog</h2>
+            <p class="p-center">Fique por dentro das novidades, dicas de carreira e tendências do mercado de trabalho. Aqui você encontra conteúdos exclusivos que vão te ajudar a crescer profissionalmente e a se conectar com as melhores oportunidades. Não perca nossas atualizações e acompanhe insights valiosos para empresas e candidatos!</p>
+            <div class="article-box">
+                <img src="img/blog1.jpg" alt="fundo blog">
+                <h4><a href="#">Destaque seu Currículo em 2024</a></h4>
+                <p class="article-date">17 de maio de 2024 | 13 comentários</p>
+                <p class="article-resume">Aprenda como destacar seu currículo no mercado digital, focando nas habilidades mais procuradas pelas empresas e na estrutura ideal para chamar a atenção dos recrutadores.</p>
+                <a href="#" class="article-btn light-btn">Ler post</a>
+            </div>
+            <div class="article-box">
+                <img src="img/blog2.jpg" alt="fundo blog">
+                <h4><a href="#">Tendências de Contratação para 2024</a></h4>
+                <p class="article-date">05 de fevereiro de 2024 | 25 comentários</p>
+                <p class="article-resume">Confira as principais tendências de contratação para 2024 e descubra como se preparar para as áreas e perfis mais buscados no mercado.</p>
+                <a href="#" class="article-btn light-btn">Ler post</a>
+            </div>
+            <div class="article-box">
+                <img src="img/blog3.jpg" alt="fundo blog">
+                <h4><a href="#">Networking: O Segredo do Sucesso</a></h4>
+                <p class="article-date">21 de setembro de 2023 | 8 comentários</p>
+                <p class="article-resume">Entenda a importância do networking na busca por emprego e como uma boa rede de contatos pode abrir portas para novas oportunidades.</p>
+                <a href="#" class="article-btn light-btn">Ler post</a>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <div class="footer-box">
+                    <div class="company-footer">
+                        <img src="img/logo.png" alt="logo Serviços MAB">
+                        <h2>Serviços MAB</h2>
+                        <p>A maneira mais fácil de conseguir seu próximo emprego</p>
+                    </div>
+                </div>
+                <div class="footer-box"></div>
+                <div class="footer-box">
+                    <h2>Nos encontre nas redes sociais</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram-square"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+            <div class="footer-bottom">
+                <div class="wrapper">
+                    <p>Willy Ribeiro, Ilton Barros e João Paulo - 2024</p>
+                </div>
+            </div>          
+        </footer>
+    </div>
+    <script src="js/scriptsIndex.js"></script>
+</body>
+</html>

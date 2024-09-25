@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Serviços MAB</title>
+</head>
+<body>
+    <div class="container" id="sendjobs">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <a href="index.html">
+                        <img src="img/logo.png" id="logo" alt="Serviços MAB">
+                    </a>
+                    <i class="fas fa-bars btn-menumobile"></i>
+                    <ul>
+                        <li><a href="ev.html">Encontrar vagas</a></li>
+                        <li><a href="sendjobs.html">Enviar vagas</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="sendjobs-container" class="wrapper">
+            <h1>Preencha os dados da vaga</h1>
+            <form action="" id="formSend">
+                <div class="input-box">
+                    <label>Titulo da vaga<span class="required">*</span></label>
+                    <input type="text" name="jobtitle" id="jobtitle" placeholder="insira o titulo da vaga">
+                </div>
+                <div class="input-box">
+                    <label>Endereço da vaga <span class="required">*</span></label>
+                    <textarea name="Description" id="locality" placeholder="Insira o endereço da vaga"></textarea>
+                </div>
+                <div class="input-box">
+                    <label>Nome da empresa<span class="required">*</span></label>
+                    <input type="text" name="company" id="company" placeholder="insira o nome da empresa">
+                </div>
+                <div class="input-box">
+                    <label>Tipo de contratação<span class="required">*</span></label>
+                    <select name="jobtype" id="jobtype">
+                        <option value="">Escolha uma opção</option>
+                        <option value="pj">PJ</option>
+                        <option value="clt">CLT</option>
+                        <option value="homeoffice">Home Office</option>
+                        <option value="estagio">Estágio</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="footer-box">
+                    <div class="company-footer">
+                        <img src="img/logo.png" alt="logo Serviços MAB">
+                        <h2>Serviços MAB</h2>
+                        <p>A maneira mais fácil de conseguir seu próximo emprego</p>
+                    </div>
+                </div>
+                <div class="footer-box"></div>
+                <div class="footer-box">
+                    <h2>Nos encontre nas redes sociais</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram-square"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+            <div class="footer-bottom">
+                <div class="wrapper">
+                    <p>Willy Ribeiro, Ilton Barros e João Paulo - 2024</p>
+                </div>
+            </div>          
+        </footer>
+    </div>
+    <script src="js/scriptsSendjobs.js"></script>
+</body>
+</html>
