@@ -1,7 +1,5 @@
-// Suponha que o array "jobs" esteja no localStorage (você pode carregá-lo de outra forma)
 const jobs = JSON.parse(localStorage.getItem('jobs')) || [];
 
-// Capturar o formulário
 const form = document.getElementById('formProc');
 const jobInput = document.getElementById('job');
 const companyInput = document.getElementById('company');
@@ -14,7 +12,7 @@ function searchJobs() {
     const companyTerm = companyInput.value;
     const categoryTerm = categorySelect.value;
 
-    // Filtrar os resultados com base nos termos de busca
+    // filtra os resultados com base nos termos de busca
     const filteredJobs = jobs.filter(job => {
         const jobTitleMatch = searchTerm === '' || job.jobtitle === searchTerm;
         const companyMatch = companyTerm === '' || job.company === companyTerm;
@@ -22,18 +20,18 @@ function searchJobs() {
         return jobTitleMatch && companyMatch && categoryMatch;
     });
 
-    // Limpar a lista de resultados
+    // limpa a lista de resultados
     resultsList.innerHTML = '';
     
 
     if (filteredJobs.length > 0) {
-        // Exibir os resultados encontrados
+        // exibi os resultados encontrados
         filteredJobs.forEach(job => {
             const li = document.createElement('li');
             li.classList.add('job-item')
             if(job.company === "Facebook"){
                 li.innerHTML = `
-                    <a href="#" class="clickarea">
+                    <a href="job.html" class="clickarea">
                                     <div class="company-box">
                                         <img src="img/facebooklogo.png">
                                         <div class="company-info">
